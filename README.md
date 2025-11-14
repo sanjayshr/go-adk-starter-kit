@@ -176,6 +176,91 @@ To add additional entry points:
 - `github.com/joho/godotenv` - Environment variable management
 - `log/slog` - Structured logging (stdlib)
 
+## Contributing
+
+Contributions are welcome! Here's how to get started:
+
+### Development Setup
+
+1. Fork the repository
+2. Clone your fork:
+```bash
+git clone https://github.com/your-username/go-adk-starter-kit.git
+cd go-adk-starter-kit
+```
+
+3. Install dependencies:
+```bash
+go mod download
+```
+
+4. Create a feature branch:
+```bash
+git checkout -b feature/your-feature-name
+```
+
+### Contribution Guidelines
+
+- **Code Style**: Follow standard Go conventions
+  - Run `go fmt ./...` before committing
+  - Use meaningful variable and function names
+  - Add comments for exported functions and types
+
+- **Testing**: Add tests for new features
+  - Place tests in `*_test.go` files
+  - Run tests with `go test ./...`
+
+- **Commits**: Write clear commit messages
+  - Use present tense ("Add feature" not "Added feature")
+  - Reference issues if applicable
+
+- **Documentation**: Update README.md if needed
+  - Document new flags or configuration options
+  - Add examples for new features
+
+### Submitting Changes
+
+1. Ensure your code passes all checks:
+```bash
+go fmt ./...
+go vet ./...
+go test ./...
+```
+
+2. Commit your changes:
+```bash
+git add .
+git commit -m "Add: description of your changes"
+```
+
+3. Push to your fork:
+```bash
+git push origin feature/your-feature-name
+```
+
+4. Open a Pull Request:
+   - Describe what changes you made and why
+   - Reference any related issues
+   - Wait for review and address feedback
+
+### Ideas for Contributions
+
+- Add new agent patterns (parallel, loop, conditional)
+- Implement additional configuration options
+- Add support for other LLM providers
+- Improve error handling and logging
+- Add integration tests
+- Create example use cases
+- Improve documentation
+
+### Reporting Issues
+
+Found a bug or have a suggestion? [Open an issue](https://github.com/sanjayshr/go-adk-starter-kit/issues) with:
+- Clear description of the problem or suggestion
+- Steps to reproduce (for bugs)
+- Expected vs actual behavior
+- Your environment (Go version, OS)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
